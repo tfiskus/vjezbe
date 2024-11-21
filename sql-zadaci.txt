@@ -1,0 +1,38 @@
+   SQL pretvaranje entiteta u relacije
+
+   ZAPOSLENIK(id, ime, prezime, adresa)
+   ODRAĐENI_POSLOVI (id_zaposlenik, id_posao, datum)
+   POSAO (id, naziv)
+
+   <!-- odrađeni_poslovi je pivot tablica između zaposlenika i posla -->
+   ZAPOSLENIK 1 - n ODRAĐENI_POSLOVI n - 1 POSAO
+
+-> SQL migracije
+prijenos sheme (database schema migration) i podataka (sql data migration) iz jedne u drugu (početne u ciljnu) bazu
+
+
+-> Laravel migracije
+služe za definiranje sheme baze podataka određene aplikacije (kreiranje i modificiranje tablica/entiteta i njenih atributa) 
+sa ciljem olakšavanja prijenosa i rada u timu (primjerice laka dostupnost najnovije verzije i u slučaju promjena od strane 
+drugog člana tima koji radi na istoj aplikaciji)
+
+<!-- kreiranje nove baze prema shemi u database/migrations folderu -->
+php artisan migrate
+
+<!-- brisanje stare i kreiranje nove baze -->
+php artisan migrate:fresh
+
+<!-- brisanje stare, kreiranje nove baze te punjenje podacima prema shemi u database/seeders i database/factories folderima -->
+php artisan migrate:fresh --seed
+
+
+-> Continuous integration
+CI/CD pipeline (continuous integration/delivery/deployment) uvodi stalnu automatizaciju i kontinuirani nadzor tokom kompletnog životnog ciklusa aplikacije, od faza integracije i testiranja do isporuke i primjene
+
+CI je praksa prilikom razvoja aplikacije gdje programeri redovito (ponekad svakodnevno) dodaju vlastite promjene koda na zajednički repozitorij, nakon čega se aplikacija gradi te izvode testovi
+
+obavezni koraci koje bi trebalo dodati u CI (Continuous Integration) pipeline:
+
+izvrtiti testove i vidjeti da li prolaze
+statički analizirati kod te validirati da nema nikakvih pogrešaka
+napraviti cache konfiguracijskih datoteka projekta te provjeriti da nema pogrešaka

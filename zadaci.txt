@@ -1,0 +1,75 @@
+FORMS
+
+1) A properly formatted form element will always include an action attribute.
+FALSE
+
+2) Web crawlers follow anchor tags <a href="....and may even fill in forms with a method of GET, 
+but will never submit a form with a method=attribute of(_______).
+POST
+
+3) Within PHP the (_____) array merges $_GET and $_POST data.
+$_REQUEST
+
+4) It is good practice for a web application to change data on a GET request.
+FALSE
+
+5) The (____) attribute of an text input field will set a default value for the field.
+value
+
+6) The function htmlentities will transform an ampersand character (&) into
+&amp;
+
+7) The input type (_______) will display your form input as dots.
+password
+
+8) To connect the behaviout of multiple radio buttons (e.g. make sure that only one
+ is "on" at the same time), make sure to give each radio button the same (________)attribute.
+name
+
+9) To set a checkbox as checked by default, use the (_____) attribute.
+checked
+
+10) To set a default option in a drop-down list, use the (______) attribute.
+selected
+
+11) All browers treat unknown types as type=(_____)
+text
+
+12) in HTMLS, the email input type doesn't validate the value until your press
+submit
+
+13) Post data is appended to the URL.
+FALSE
+
+14) In PHP script, it is generally a good idea to process any incoming POST data 
+before you produce page output.
+TRUE
+
+15) "Wiew Page Source" allows to see the HTML code.
+TRUE
+
+16) "Wiew Page Source" allows to see the PHP code.
+FALSE
+
+17) "Wiew Page Source" allows to see the output of the PHP code.
+TRUE
+
+
+U PHP-u, var_dump() je funkcija koja se koristi za ispis informacija o varijablama. 
+Kada pozovete ovu funkciju, ona prikazuje tip varijable, njen sadržaj, 
+kao i dodatne informacije o strukturi, posebno ako je varijabla složena (npr. niz ili objekat).
+Dakle, var_dump() će prikazati:
+Tip i vrijednost jednostavnih varijabli (npr. int, string).
+Dužinu stringa ili broj elemenata u nizu (npr. string(13) označava da string ima 13 znakova).
+Strukturu složenih varijabli poput nizova i objekata, uključujući tip i vrijednost svakog elementa.
+Ova funkcija je vrlo korisna za debugiranje i razumijevanje podataka s kojima radite.
+
+
+Return values are type-specific in PHP functions (a function only returns a value of a specified data type). -FALSE
+In PHP, functions do not enforce type-specific return values unless you explicitly specify a return type. 
+Starting from PHP 7.0, you can declare a return type in function definitions, 
+but if you do not specify a return type, the function can return a value of any type regardless of its declaration.
+
+
+
+
