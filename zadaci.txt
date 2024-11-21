@@ -2,6 +2,9 @@ FORMS
 
 1) A properly formatted form element will always include an action attribute.
 FALSE
+While the action attribute is commonly used to specify where to send the form data when submitted,
+it is not strictly required. If the action attribute is omitted, the form data will be sent to the same URL as the form itself by default. 
+Thus, a form can be valid without an action attribute.
 
 2) Web crawlers follow anchor tags <a href="....and may even fill in forms with a method of GET, 
 but will never submit a form with a method=attribute of(_______).
